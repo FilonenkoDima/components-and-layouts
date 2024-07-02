@@ -99,6 +99,18 @@
         color: #087f5b;
       }
     </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const items = document.querySelectorAll(".item");
+
+        items.forEach((item) => {
+          item.addEventListener("click", function () {
+            item.classList.toggle("open");
+          });
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="accordion">
